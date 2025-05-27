@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album Ảnh Hiện Đại</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📸 Album Ảnh Của Tôi</h1>
+    </header>
+
+    <main class="gallery">
+      <div class="photo-card">
+        <img
+          src="images/photo1.jpg"
+          alt="Ảnh 1"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="photo-card">
+        <img
+          src="images/photo2.jpg"
+          alt="Ảnh 2"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <div class="photo-card">
+        <img
+          src="images/photo3.jpg"
+          alt="Ảnh 3"
+          onclick="openModal(this.src)"
+        />
+      </div>
+      <!-- Thêm nhiều ảnh tùy thích -->
+    </main>
+
+    <!-- Modal ảnh lớn -->
+    <div id="modal" class="modal" onclick="closeModal()">
+      <img class="modal-content" id="modalImg" />
+      <span class="close">&times;</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
